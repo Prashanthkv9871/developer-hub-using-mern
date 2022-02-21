@@ -1,11 +1,11 @@
 import React from 'react';
 import { BrowserRouter,Route,Switch } from 'react-router-dom';
-import Home from './Home';
-import Login from './Login';
-import Register from './Register';
-import Dashboard from './Dashboard';
-import Myprofile from './Myprofile';
-import Indprofile from './Indprofile';
+import Home from './components/Home/Home';
+import Login from './components/Login/Login';
+import Register from './components/Register.css/Register';
+import Dashboard from './components/Dashboard/Dashboard';
+import Myprofile from './components/Myprofile/Myprofile';
+import Indprofile from './components/Indprofile/Indprofile';
 
 const App = () => {
   return <div>

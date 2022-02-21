@@ -36,25 +36,29 @@ const Login = () => {
             </ul>
         </nav>
 
-        <section className='container'>
-            <h1 className='large text-primary'>Sign In</h1>
-            <p className='lead'><i className='fas fa-user'></i> Sign into Your Account</p>
+        <div className='container'>
+            <div className='row justify-content-center'>
+                <div className='col-md-6'>
+                    <h1 className='large text-primary mt-4'>Sign In</h1>
+                    <p className='lead'><i className='fas fa-user'></i> Sign into Your Account</p>
 
-            <form className='form' onSubmit={submitHandler} autoComplete='off'> 
-                <div className='form-group'>
-                    <input type='email' placeholder="Email address" className='form-control' name="email" onChange={changeHandler} required />
+                    <form className='form' onSubmit={submitHandler} autoComplete='off'> 
+                        <div className='form-group'>
+                            <input type='email' placeholder="Email address" className='form-control' name="email" onChange={changeHandler} required />
+                        </div>
+
+                        <div className='form-group'>
+                            <input type='password' placeholder="Password" className='form-control' name="password" onChange={changeHandler} required />
+                        </div>
+
+                        <input type='submit' className='btn btn-primary' value='Login' />
+                    </form>
+                    <p className='my-1'>
+                        Don't have an account ? <Link to='/register'>Sign Up</Link>
+                    </p>
                 </div>
-
-                <div className='form-group'>
-                    <input type='password' placeholder="Password" className='form-control' name="password" onChange={changeHandler} required />
-                </div>
-
-                <input type='submit' className='btn btn-primary' value='Login' />
-            </form>
-            <p className='my-1'>
-                Don't have an account ? <Link to='/register'>Sign Up</Link>
-            </p>
-        </section>
+            </div>
+        </div>
     </div>
   )
 }

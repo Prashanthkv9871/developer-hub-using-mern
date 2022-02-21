@@ -28,7 +28,7 @@ const Register = () => {
     <div>
         <nav className='navbar bg-dark'>
             <h1>
-                <Link to='/' style={{color:"white"}}><i className="fa-solid fa-code"></i> Developer Hub</Link>
+                <Link to='/' style={{color:"white",fontSize:"30px"}}><i className="fa-solid fa-code"></i> Developer Hub</Link>
             </h1>
 
             <ul className='d-flex' style={{listStyle:"none"}}>
@@ -37,10 +37,10 @@ const Register = () => {
             </ul>
         </nav>
 
-        <div className='container '>
+        <div className='container'>
             <div className='row justify-content-center'>
                 <div className='col-md-6'>
-                    <h1 className='large text-primary'>Sign Up</h1>
+                    <h1 className='large text-primary mt-4'>Sign Up</h1>
                     <p className='lead'><i className='fas fa-user'></i> Create Your Account</p>
 
                     <form className='form' onSubmit={submitHandler} autoComplete='off'>
